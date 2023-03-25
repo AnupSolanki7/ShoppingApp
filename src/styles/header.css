@@ -1,0 +1,78 @@
+.nav-bar {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: gray;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.nav-bar .logo {
+  margin-left: 25px;
+  color: white;
+}
+
+.nav-bar .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+
+.nav-bar .links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.nav-bar .links .noti {
+  position: relative;
+  border-radius: 40px;
+  background-color: red;
+  font-size: 12px;
+  font-weight: 400;
+  top: -10px;
+  right: -5px;
+  padding: 2px 6px;
+  min-width: 5px;
+}
+
+
+.nav-bar .links button {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 15px;
+  margin-right: 25px;
+}
+
+.nav-bar .links button:hover,
+.nav-bar .links button:focus {
+  background-color: #F082AC;
+}
