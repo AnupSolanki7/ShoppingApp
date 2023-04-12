@@ -1,73 +1,75 @@
-.code-div{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    height: 70vh;
-    width: 80%;
+.code-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  height: 70vh;
+  width: 80%;
 }
 
-.code-div .code-header{
-    position: relative;
-    width: 60%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #262626db;
-    color: gray ;
-    padding: 0px 50px;
-    border-radius: 20px 20px 0px 0px;
+.code-div .code-header {
+  position: relative;
+  width: 60%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626db;
+  color: gray;
+  padding: 0px 50px;
+  border-radius: 20px 20px 0px 0px;
 }
 
-.code-div .code-header .button-div{
-    position: absolute;
-    display: flex;
-    gap: 10px;
-    left: 3%;
+.code-div .code-header .button-div {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  left: 3%;
 }
 
-.code-div .code-header .red{
-    display: block;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: red;
+.code-div .code-header .red {
+  display: block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: red;
 }
-.code-div .code-header .blue{
-    display: block;
-    height: 15px;
-    width: 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: blue;
+.code-div .code-header .blue {
+  display: block;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: blue;
 }
-.code-div .code-header .green{
-    display: block;
-    height: 15px;
-    width: 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: rgb(4, 221, 4);
-}
-
-.code-div .code-textarea{
-    height: 70%;
-    text-align: left;
-    width: 60%;
-    border-radius: 0px 0px 20px 20px;
-    padding: 20px 50px;
-    font-size: 15px;
-    font-family:monospace;
-    white-space: pre;
-    font-weight: 600;
-    color: white;
-    background-color: black;
+.code-div .code-header .green {
+  display: block;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgb(4, 221, 4);
 }
 
-.code-div .code-textarea:focus{
-    outline: none;
+.code-div .code-textarea {
+  height: 70%;
+  caret-color: white;
+  text-align: left;
+  width: 60%;
+  border-radius: 0px 0px 20px 20px;
+  padding: 20px 50px;
+  font-size: 18px;
+  font-family: monospace;
+  white-space: pre;
+  font-weight: 600;
+  color: white;
+  background-color: black;
 }
+
+.code-div .code-textarea:focus {
+  outline: none;
+}
+

@@ -11,7 +11,7 @@ const Login = () => {
   const handleSubmit = (event: any) => {
     const data:any = { email: email, password: password }
     event.preventDefault();
-    if (email === "admin@gmail.com" && password === "Abcd@1234") {
+    if (email === "admin@gmail.com" && password === "123456") {
       dispatch(startLogin(data))
     }
   };
