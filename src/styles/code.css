@@ -55,18 +55,19 @@
 }
 
 .code-div .code-textarea {
-  height: 70%;
-  caret-color: white;
+  margin: 0px;
+  height: 70% !important;
+  caret-color: white !important;
   text-align: left;
-  width: 60%;
+  width: 60% !important;
   border-radius: 0px 0px 20px 20px;
-  padding: 20px 50px;
+  padding: 20px 50px !important;
   font-size: 18px;
   font-family: monospace;
   white-space: pre;
   font-weight: 600;
-  color: white;
-  background-color: black;
+  /* color: white !important;
+  background-color: black !important; */
 }
 
 .code-div .code-textarea:focus {

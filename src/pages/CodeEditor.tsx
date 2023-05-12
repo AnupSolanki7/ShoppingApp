@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./../styles/code.css";
-import Highlighter from "react-highlight-words";
 import { AiFillCode } from "react-icons/ai";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { darcula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const CodeEditor = () => {
   const [textValue, setTextValue] = useState("");
@@ -32,23 +33,9 @@ const CodeEditor = () => {
           name=""
           id=""
         ></textarea>
-        {/* <Highlighter
-       
-          highlightClassName="YourHighlightClass"
-          highlightStyle={{backgroundColor:"transparent", color:"#00a1ff", zIndex:"5", position:"relative", fontWeight:"600",fontFamily:"monospace"}}
-          searchWords={["const", "()", "=>"]}
-          autoEscape={true}
-          textToHighlight={textValue}
-        /> */}
-        <span className="code-textarea">
-          {textValue.split("").map((e: any) => {
-            if (e === "c") {
-              return <span style={{ color: "red" }}>{e}</span>;
-            } else {
-              return (<span>{e}</span>)
-            }
-          })}
-        </span>
+        <SyntaxHighlighter className="code-textarea" language="javascript" style={darcula}>
+          {textValue}
+        </SyntaxHighlighter>
       </div>
     </>
   );
